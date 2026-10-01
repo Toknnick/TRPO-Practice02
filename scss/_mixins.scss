@@ -1,0 +1,14 @@
+@use "variables" as *;
+
+@mixin container {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 $space;
+}
+
+@mixin panel {
+  padding: $space;
+  background: $surface;
+  border-radius: $radius;
+  margin-bottom: spacer(0.75);
+}

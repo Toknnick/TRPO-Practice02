@@ -1,0 +1,11 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.filters {
+  @include panel;
+}
+
+.filters__item {
+  display: flex;
+  gap: 8px;
+}

@@ -1,0 +1,10 @@
+{
+  "name": "trpo-practice02",
+  "scripts": {
+    "sass": "sass scss/styles.scss css/styles.css",
+    "sass:watch": "sass --watch scss/styles.scss css/styles.css"
+  },
+  "devDependencies": {
+    "sass": "^1.83.0"
+  }
+}

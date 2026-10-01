@@ -1,0 +1,10 @@
+@use "../variables" as *;
+
+.button {
+  display: inline-block;
+  padding: 10px $space;
+  border-radius: $radius;
+  background: $accent;
+  color: $surface;
+  text-decoration: none;
+}

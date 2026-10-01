@@ -1,0 +1,21 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.card {
+  @include panel;
+
+  &__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: spacer(0.75);
+    border-radius: $radius;
+  }
+
+  &__category {
+    color: $accent;
+  }
+
+  &__price {
+    font-weight: 800;
+  }
+}

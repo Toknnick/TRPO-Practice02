@@ -6,68 +6,37 @@ body {
   line-height: 1.5;
 }
 
-.site-header{
+.site-header {
   padding: 16px;
   background: #1f2937;
   color: #ffffff;
-
 }
 
 .page {
-  max-width: auto;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 24px 16px;
+  padding: 0 16px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
-.info,
-.filters,
-.card {
+.info {
   padding: 16px;
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 14px;
   margin-bottom: 12px;
 }
 
 .layout {
   display: grid;
-  grid-template-columns: 200px 1fr; /*200px - ширина фильтров*/
-  gap: 24px; /*Промежуток между фильтрами и каталогом*/
-}
-
-.filters__item {
-  display: flex;
-  gap: 8px;
+  grid-template-columns: 200px 1fr;
+  gap: 24px;
 }
 
 .catalog {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
-}
-
-.card__image {
-  width: 100%;
-  height: auto;
-  margin-bottom: 12px;
-  border-radius: 10px;
-}
-
-
-.card__category {
-  color: #315efb;
-}
-
-.card__price {
-  font-weight: 800;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 16px;
-  border-radius: 10px;
-  background: #315efb;
-  color: #ffffff;
-  text-decoration: none;
 }
 
 .site-footer {
@@ -77,14 +46,54 @@ body {
   color: #ffffff;
 }
 
-@media (max-width: 768px) { /*Чтобы перестроить под более узкий экран*/
+@media (max-width: 768px) {
   .layout {
     grid-template-columns: 1fr;
   }
 }
-
-@media (max-width: 480px) { /*Чтобы перестроить под более узкий экран*/
+@media (max-width: 480px) {
   .catalog {
     grid-template-columns: 1fr;
   }
 }
+.filters {
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.filters__item {
+  display: flex;
+  gap: 8px;
+}
+
+.card {
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+.card__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 14px;
+}
+.card__category {
+  color: #315efb;
+}
+.card__price {
+  font-weight: 800;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 14px;
+  background: #315efb;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,49 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.site-header {
+  padding: $space;
+  background: $text;
+  color: $surface;
+}
+
+.page {
+  @include container;
+  padding-top: spacer(1.5);
+  padding-bottom: spacer(1.5);
+}
+
+.info {
+  @include panel;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: spacer(1.5);
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: $space;
+}
+
+.site-footer {
+  padding: $space;
+  text-align: center;
+  background: $text;
+  color: $surface;
+}
+
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+}
