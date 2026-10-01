@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #f5f7fb;
+  line-height: 1.5;
+}
+
+.site-header{
+  padding: 16px;
+  background: #1f2937;
+  color: #ffffff;
+
+}
+
+.page {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.info,
+.filters,
+.card {
+  padding: 16px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 200px 1fr; /*200px - ширина фильтров*/
+  gap: 24px; /*Промежуток между фильтрами и каталогом*/
+}
+
+.filters__item {
+  display: flex;
+  gap: 8px;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 10px;
+}
+
+
+.card__category {
+  color: #315efb;
+}
+
+.card__price {
+  font-weight: 800;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: #315efb;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-footer {
+  padding: 16px;
+  text-align: center;
+  background: #1f2937;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) { /*Чтобы перестроить под более узкий экран*/
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) { /*Чтобы перестроить под более узкий экран*/
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+}
